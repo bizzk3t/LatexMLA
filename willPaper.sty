@@ -1,0 +1,27 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{willPaper}
+
+\ProcessOptions\relax
+
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{times}
+\usepackage{geometry}
+
+\doublespace
+
+\pagestyle{fancy}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+
+
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headsep}{0.333in}
+\setlength{\parindent}{0.5in}
+
+\newcommand{\willquoteA}[3]{"#1" (#2 #3).}
+\newcommand{\willquoteB}[2]{"#1" (#2).}
+
+\endinput
