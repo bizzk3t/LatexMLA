@@ -1,11 +1,3 @@
-%\documentclass{willPaper}
-
-%\firstname{Will}
-%\lastname{Harrison}
-%\classtitle{Catholic Studies 301}
-%\paperdate{10 April 2014}
-%\papertitle{Jesus in the Garden}
-
 \documentclass{article}[11pt]
 \usepackage[letterpaper,hmargin=1in,vmargin=1in]{geometry} 
 \usepackage{amssymb,amsmath,latexsym,url,amsfonts,xspace,multicol}
@@ -16,11 +8,9 @@
 \usepackage{marvosym}
 \usepackage{verbatim}
 \usepackage[english]{babel}
-\usepackage{parcolumns}
 \usepackage{lipsum}
 \usepackage{sectsty}
-\usepackage{chronology}
-%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{hyperref}
 
 \usepackage[scaled]{helvet}
 \renewcommand*\familydefault{\sfdefault}
@@ -29,8 +19,9 @@
 \newcommand{\mytab}[1]{\hspace{.2\textwidth}\rlap{#1}}
 \newcommand{\myskip}{\vskip0.5in}
 
-\sectionfont{\Huge}
 
+\definecolor{willblue}{HTML}{0000A0}
+\sectionfont{\color{willblue}\Large}
 \begin{document}
 
 %\initpaper
@@ -38,10 +29,11 @@
 
 
 \begin{multicols}{2}
-		{\fontsize{40}{40}\selectfont Will Harrison} \\
+	{\section*{\Huge{William Harrison}}}
 		\vfill
 	\columnbreak
-		\Mobilefone 612-360-0256 \Letter harr9203@stthomas.edu \\
+		\Mobilefone 612-360-0256 \\
+		\Letter harr9203@stthomas.edu \\
 		\vfill
 	\columnbreak
 \end{multicols}
@@ -71,32 +63,52 @@
 	\section*{Work Experience}
 	\subsection*{Medtronic}
 	\begin{tabular}{l l}
-	Summer Engineering Associate 	& \\
-	May 2012 -- Aug 2012 		& \\
-	September 2012 -- May 2013 	& \\
+	Summer Engineering Associate 	& - Maintained and updated in house website.\\
+	May 2012 -- Aug 2012 		& - Compiled, Organized, and Maintained a list of candidates for gaining special certification. \\
+	September 2012 -- May 2013 	& - Distributed instructional guides to help install statistical software. \\
 	May 2013 -- Aug 2013 		& \\
 	August 2013 -- May 2014 	& \\
 	\end{tabular}
 	\hfill
 	\subsection*{Wayzata Youth Hockey Association}
 	\begin{tabular}{l l}
-	Peewee AA Coach 		& \\
-	September 2013 -- March 2013 	& \\
-	September 2014 -- March 2014 	& \\
+	Peewee AA Coach 		& - Helped run practices 3-5 times a week during the school year \\
+	September 2013 -- March 2013 	& - Taught kids hockey skills and incorporated life lessons \\
+	September 2014 -- March 2014 	& - Relay information from coaches to unsatisfied parents :P\\
 	\end{tabular}
 	\subsection*{App Development}
 	\begin{tabular}{l l}
-	Independent App Developer	& \\
-	May 2009 -- August 2009 	& \\
+	Independent App Developer	& - Set a goal by the end of the summer to release app which found churches nearby you. \\
+	May 2009 -- August 2009 	& - Discovered the process of maintaining and submitting apps on both iOS and Android.
 	\end{tabular}\\
 \begin{multicols}{2}
 	\section*{Projects}
-		\vfill
-		\columnbreak
+	\subsection*{Python Crytography}
+		Used in indipendent study of Modern Cryptograpy.
+		It tests the strength of certain cryptographic functions
+		and reports whether it is considered secure. \href{https://github.com/bizzk3t/PythonCrypto}{Github}
+		\subsection*{Quorridor Pathfinding}
+		Quorridor is a board game that consists of placing walls and moving your pawn against
+		and opponent. \href{https://github.com/bizzk3t/Graph}{Github}
+		This program finds the shortest path to a winning square.
+		\subsection*{Latex MLA Autoformat Tool}
+		Latex did not have a specific MLA paper formatting template, so I implemented this program to automatically format the paper. \href{https://github.com/bizzk3t/LatexMLA}{Github}
 \end{multicols}
+\begin{multicols}{2}
+	\section*{Interests}
+	\subsection*{Hockey}
+	Cus I wanted to win a National championship. Im tired man, been working for hours. Ill get this section finished
+	\subsection*{Music Production}
+	Cus I wanted to win a National championship
+	\subsection*{Arduino}
+	Cus I wanted to win a National championship
+\end{multicols}
+
+
 
 \begin{comment}
 
+		{\fontsize{40}{40}\selectfont Will Harrison} \\
 \end{comment}
 
 \end{document}
