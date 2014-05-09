@@ -1,5 +1,6 @@
 \documentclass{article}[11pt]
-\usepackage[letterpaper,hmargin=1in,vmargin=1in]{geometry} 
+%\usepackage[letterpaper,hmargin=1in,vmargin=1in]{geometry}
+\usepackage[top=1in,bottom=.25in,, left=1in, right=1in]{geometry}
 \usepackage{amssymb,amsmath,latexsym,url,amsfonts,xspace,multicol}
 \usepackage{graphicx}
 \usepackage{listings}
@@ -19,97 +20,94 @@
 \newcommand{\mytab}[1]{\hspace{.2\textwidth}\rlap{#1}}
 \newcommand{\myskip}{\vskip0.5in}
 
-
+\thispagestyle{empty}
 \definecolor{willblue}{HTML}{0000A0}
 \sectionfont{\color{willblue}\Large}
 \begin{document}
 
 %\initpaper
 %Hey
+\setlength{\parskip}{0pt}
 
 
 \begin{multicols}{2}
 	{\section*{\Huge{William Harrison}}}
-		\vfill
 	\columnbreak
-		\Mobilefone 612-360-0256 \\
-		\Letter harr9203@stthomas.edu \\
-		\vfill
-	\columnbreak
+	\begin{flushleft}
+		Phone: 612-360-0256 \\
+		Email: harr9203@stthomas.edu \\
+		Address: 1984 Grand Ave Apt 8, St. Paul, MN 55105
+	\end{flushleft}
 \end{multicols}
 \begin{multicols}{2}
 	\section*{Education}
 	\subsection*{University of St. Thomas}
-	Computer Science Information Securtiy\\
-	Catholic Studies \\
-	Expected May 2015 / GPA: 3.33 \\\\
-	\begin{tabular}{l l}
-	\textbf{Courses}	& Algorithms, Information Security, \\
+	Computer Science Information - Securtiy; Catholic Studies\\
+	Fall 2011 - Spring 2015 (expected)\\
+	\noindent
+	\begin{tabular}{@{}p{1.5cm}l}
+	\noindent\textbf{Courses}	& Algorithms, Information Security, \\
 				& Object Oriented Design, Networking, \\
-				& Modern Crytography \\
+				& Modern Crytography, System Design. \\
 	\end{tabular}
 		\vfill
 		\columnbreak
 	\section*{Skills/Languages}
-	\begin{tabular}{l l}
+	\begin{tabular}{@{}p{2cm}l}
 	Languages	& Python, Bash, HTML, CSS, Javascript, \\ 
-			& Java, C, C++ \\\\
-	Technologies	& \LaTeX, vim, Wireshark, git, shell, Linux \\
-			& Openssl, iOS, Android \\
+			& Java, C, C++. \\\\\\
+	Technologies	& Latex, vim, Wireshark, git, shell, Linux \\
+			& Openssl, iOS, Android. \\
 	\end{tabular}
 		\vfill
 		\columnbreak
 \end{multicols}
 	\section*{Work Experience}
 	\subsection*{Medtronic}
-	\begin{tabular}{l l}
-	Summer Engineering Associate 	& - Maintained and updated in house website.\\
-	May 2012 -- Aug 2012 		& - Compiled, Organized, and Maintained a list of candidates for gaining special certification. \\
-	September 2012 -- May 2013 	& - Distributed instructional guides to help install statistical software. \\
-	May 2013 -- Aug 2013 		& \\
-	August 2013 -- May 2014 	& \\
+	\noindent
+	\begin{tabular}{@{}p{5cm}l}
+	\noindent Summer Engineering Associate 	& - Maintained and updated in house website.\\
+	Summer 2012 			& - Maintained a list of candidates for gaining special certification. \\
+	Fall 2012 - Spring 2013 	& - Distributed instructional guides to help install statistical software. \\
+	Summer 2013 			& \\
+	Fall 2013 - Spring 2014	&
 	\end{tabular}
 	\hfill
 	\subsection*{Wayzata Youth Hockey Association}
-	\begin{tabular}{l l}
-	Peewee AA Coach 		& - Helped run practices 3-5 times a week during the school year \\
-	September 2013 -- March 2013 	& - Taught kids hockey skills and incorporated life lessons \\
-	September 2014 -- March 2014 	& - Relay information from coaches to unsatisfied parents :P\\
+	\begin{tabular}{@{}p{5cm}l}
+	Peewee AA Coach 		& - Helped run practices 3-5 times a week during the school year. \\
+	2012 - 2013 	& - Taught kids hockey skills and incorporated life lessons. \\
+	2013 - 2014 	& - Main source of communication with parents about team related information.
 	\end{tabular}
 	\subsection*{App Development}
-	\begin{tabular}{l l}
-	Independent App Developer	& - Set a goal by the end of the summer to release app which found churches nearby you. \\
-	May 2009 -- August 2009 	& - Discovered the process of maintaining and submitting apps on both iOS and Android.
-	\end{tabular}\\
+	\begin{tabular}{@{}p{5cm}l}
+	Independent App Developer	& - Released app called The Catholic App: Find a Church near you. \\
+	May 2009 -- August 2009 	& - Learned process of submitting apps on iOS and Android stores.
+	\end{tabular}
 \begin{multicols}{2}
 	\section*{Projects}
-	\subsection*{Python Crytography}
-		Used in indipendent study of Modern Cryptograpy.
-		It tests the strength of certain cryptographic functions
-		and reports whether it is considered secure. \href{https://github.com/bizzk3t/PythonCrypto}{Github}
 		\subsection*{Quorridor Pathfinding}
-		Quorridor is a board game that consists of placing walls and moving your pawn against
-		and opponent. \href{https://github.com/bizzk3t/Graph}{Github}
-		This program finds the shortest path to a winning square.
+		Built a tool for this game in Python to find the best path around placed walls to a winning destination. \href{https://github.com/bizzk3t/Graph}{Github}
 		\subsection*{Latex MLA Autoformat Tool}
-		Latex did not have a specific MLA paper formatting template, so I implemented this program to automatically format the paper. \href{https://github.com/bizzk3t/LatexMLA}{Github}
+		Implemented a program to autoformat MLA citation standards used for my humanities papers. \href{https://github.com/bizzk3t/LatexMLA}{Github}
+		\subsection*{Python Crytography}
+		Built program in Python to test the strength of cryptographic functions for independent study in Modern Cryptography. \href{https://github.com/bizzk3t/PythonCrypto}{Github}
+		\subsection*{Music Studio \textit{In Progress}}
+		Developed a framework and design for a unser music studio. Currently testing different ways to implement this program. The end product will be in C or C++.
+		\vfill
+		\columnbreak
+	\section*{Interests}
+	\subsection*{Ice Hockey}
+	I played and now coach hockey. I love to incorporate the importance of life outside of hockey. I teach hockey as a game, but a game that can make you a complete person. 
+	\subsection*{Music Production}
+	I discoverd my interest in all music in college and decided to pay for piano lessons and watch videos about all apsects of music production. I never knew anything about it before and now I consider myself very proficient in that area.
+	\subsection*{Arduino}
+	Taught myself the basics of electrical engineering through experimentation with the Arduino. Implemented a simple dot matrix clock that displayed the time of day.
 \end{multicols}
 \begin{multicols}{2}
-	\section*{Interests}
-	\subsection*{Hockey}
-	Cus I wanted to win a National championship. Im tired man, been working for hours. Ill get this section finished
-	\subsection*{Music Production}
-	Cus I wanted to win a National championship
-	\subsection*{Arduino}
-	Cus I wanted to win a National championship
 \end{multicols}
-
-
-
-\begin{comment}
-
-		{\fontsize{40}{40}\selectfont Will Harrison} \\
-\end{comment}
+		\subsection*{Chess \textit{In Progress}}
+		Developing a Role Playing Chess game that implements simple chess playing with a campaign that adds a unique experience.
 
 \end{document}
 
