@@ -12,6 +12,10 @@
 \usepackage{lipsum}
 \usepackage{sectsty}
 \usepackage{hyperref}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.5ex}{0.5ex}
+\titlespacing*{\subsection}{0pt}{0.5ex}{0.5ex}
+\titlespacing*{\subsubsection}{0pt}{0.5ex}{0.5ex}
 
 \usepackage[scaled]{helvet}
 \renewcommand*\familydefault{\sfdefault}
@@ -21,8 +25,10 @@
 \newcommand{\myskip}{\vskip0.5in}
 
 \thispagestyle{empty}
-\definecolor{willblue}{HTML}{0000A0}
+\definecolor{willblue}{HTML}{0000FF}
+\definecolor{willgreen}{HTML}{FF00FF}
 \sectionfont{\color{willblue}\Large}
+\subsectionfont{\color{willgreen}\large}
 \begin{document}
 
 %\initpaper
@@ -42,8 +48,11 @@
 \begin{multicols}{2}
 	\section*{Education}
 	\subsection*{University of St. Thomas}
-	Computer Science Information - Securtiy; Catholic Studies\\
-	Fall 2011 - Spring 2015 (expected)\\
+	Fall 2011 - Spring 2015 (expected)\\\\
+	\begin{tabular}{@{}p{1.5cm}l}
+	\textbf{Majors}		& Computer Science Information Security\\
+				& Catholic Studies\\\\
+	\end{tabular}
 	\noindent
 	\begin{tabular}{@{}p{1.5cm}l}
 	\noindent\textbf{Courses}	& Algorithms, Information Security, \\
@@ -64,25 +73,24 @@
 \end{multicols}
 	\section*{Work Experience}
 	\subsection*{Medtronic}
-	\noindent
 	\begin{tabular}{@{}p{5cm}l}
-	\noindent Summer Engineering Associate 	& - Maintained and updated in house website.\\
-	Summer 2012 			& - Maintained a list of candidates for gaining special certification. \\
-	Fall 2012 - Spring 2013 	& - Distributed instructional guides to help install statistical software. \\
+		\textbf{Summer Engineering Associate} 	& \textbullet\ Maintained and updated in house website.\\
+	Summer 2012 			& \textbullet\ Maintained a list of candidates for gaining special certification. \\
+	Fall 2012 - Spring 2013 	& \textbullet\ Distributed instructional guides to help install statistical software. \\
 	Summer 2013 			& \\
 	Fall 2013 - Spring 2014	&
 	\end{tabular}
 	\hfill
 	\subsection*{Wayzata Youth Hockey Association}
 	\begin{tabular}{@{}p{5cm}l}
-	Peewee AA Coach 		& - Helped run practices 3-5 times a week during the school year. \\
-	2012 - 2013 	& - Taught kids hockey skills and incorporated life lessons. \\
-	2013 - 2014 	& - Main source of communication with parents about team related information.
+		\textbf{Peewee AA Coach} 		& \textbullet\ Helped run practices for elite 13-14 year old travel ice hockey team. \\
+	2012 - 2013 	& \textbullet\ In charge of coaching by myself, groups of kids in rotation. \\
+	2013 - 2014 	& \textbullet\ Main source of communication with parents about team related information.
 	\end{tabular}
 	\subsection*{App Development}
 	\begin{tabular}{@{}p{5cm}l}
-	Independent App Developer	& - Released app called The Catholic App: Find a Church near you. \\
-	May 2009 -- August 2009 	& - Learned process of submitting apps on iOS and Android stores.
+		\textbf{Independent App Developer}	& \textbullet\ Released app called The Catholic App: Find a Church near you. \\
+	May 2009 -- August 2009 	& \textbullet\ Learned process of submitting apps on iOS and Android stores.
 	\end{tabular}
 \begin{multicols}{2}
 	\section*{Projects}
@@ -92,8 +100,10 @@
 		Implemented a program to autoformat MLA citation standards used for my humanities papers. \href{https://github.com/bizzk3t/LatexMLA}{Github}
 		\subsection*{Python Crytography}
 		Built program in Python to test the strength of cryptographic functions for independent study in Modern Cryptography. \href{https://github.com/bizzk3t/PythonCrypto}{Github}
-		\subsection*{Music Studio \textit{In Progress}}
+		\subsection*{Music Studio}
 		Developed a framework and design for a unser music studio. Currently testing different ways to implement this program. The end product will be in C or C++.
+	\subsection*{Chess}
+		Developing a Role Playing Chess game that implements simple chess playing with a campaign that adds a unique experience.
 		\vfill
 		\columnbreak
 	\section*{Interests}
@@ -106,8 +116,6 @@
 \end{multicols}
 \begin{multicols}{2}
 \end{multicols}
-		\subsection*{Chess \textit{In Progress}}
-		Developing a Role Playing Chess game that implements simple chess playing with a campaign that adds a unique experience.
 
 \end{document}
 
